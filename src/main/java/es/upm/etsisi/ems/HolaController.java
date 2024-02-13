@@ -8,23 +8,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HolaController {
 
-/*
+
     @RequestMapping("/")
     public String raiz() {
 	return "redirect:/hola";
     }
-*/
 
-    @RequestMapping("/")
-    public String raiz() {
-        return "redirect:/chao";
-    }
-    /*@RequestMapping("/hola")
+
+    @RequestMapping("/hola")
     public String hola(@RequestParam(value = "nombre", required = false, defaultValue = "Mundo") String nombre,
 	    Model model) {
 	model.addAttribute("nombre", nombre);
 	return "hola";
-    }*/
+    }
 
     @RequestMapping("/chao")
     public String chao(@RequestParam(value = "nombre", required = false, defaultValue = "Mundo") String nombre,
